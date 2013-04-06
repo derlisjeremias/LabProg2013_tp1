@@ -8,7 +8,7 @@ package ar.edu.untdf.labprog.tp1.ejer1.sol;
  *
  * @author Jere
  */
-public interface ConnFactoryMethod {
-    // Retorna por default una conección Mysql
-    public Conn createConn(String type);
+public abstract class ConnFactoryMethod {
+    
+    abstract Conn createConn();
 }

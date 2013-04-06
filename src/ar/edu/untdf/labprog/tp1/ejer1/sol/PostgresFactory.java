@@ -8,9 +8,9 @@ package ar.edu.untdf.labprog.tp1.ejer1.sol;
  *
  * @author Jere
  */
-public class PostgresFactory implements ConnFactoryMethod {
+public class PostgresFactory extends ConnFactoryMethod {
 
-    public Conn createConn(String type) {
+    public Conn createConn() {
         Conn conn = new PostgresConn();
         return conn;
     }
