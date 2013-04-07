@@ -10,7 +10,7 @@ package ar.edu.untdf.labprog.tp1.ejer1.sol;
  */
 public class MysqlFactory extends ConnFactoryMethod {
 
-    public Conn createConn() {
+    public Conn createConnection() {
         Conn conn = new MysqlConn();
         return conn;
     }

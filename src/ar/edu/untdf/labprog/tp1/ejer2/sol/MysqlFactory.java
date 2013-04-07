@@ -2,16 +2,17 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package ar.edu.untdf.labprog.tp1.ejer1.sol;
+package ar.edu.untdf.labprog.tp1.ejer2.sol;
+
 
 /**
  *
  * @author Jere
  */
-public class PostgresFactory extends ConnFactoryMethod {
+public class MysqlFactory extends ConnFactoryMethod {
 
     public Conn createConnection() {
-        Conn conn = new PostgresConn();
+        Conn conn = new MysqlConn();
         return conn;
     }
 }
