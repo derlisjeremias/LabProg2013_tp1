@@ -12,10 +12,12 @@ package ar.edu.untdf.labprog.tp1.ejer2.sol;
 public class Main {
 
     public static void main(String args[]) {
+        //Seleccionar tipo de conección Sql
         //ConnFactoryMethod factory = new MysqlFactory();
         //ConnFactoryMethod factory = new OracleFactory();
         //ConnFactoryMethod factory = new PostgresFactory();
         ConnFactoryMethod factory = new MsSqlServerFactory();
+        
         Conn conn = factory.createConnection();
         conn.connect();
         conn.query();
