@@ -14,8 +14,8 @@ public class PostgresConn implements Conn {
         System.out.println("Conectado a Postgres");
     }
 
-    ;
-    public void query() {
+    public void query(String q) {
         System.out.println("Consulta a Postgres");
+        System.out.println(q);
     }
 }

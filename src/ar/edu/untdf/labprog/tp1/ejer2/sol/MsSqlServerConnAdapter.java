@@ -18,7 +18,7 @@ public class MsSqlServerConnAdapter implements Conn {
         this.adapted.getConnect();
     }
 
-    public void query() {
-        this.adapted.executeQuery();
+    public void query(String q) {
+        this.adapted.executeQuery(q);
     }
 }

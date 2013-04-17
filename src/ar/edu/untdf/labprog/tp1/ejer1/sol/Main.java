@@ -11,13 +11,11 @@ package ar.edu.untdf.labprog.tp1.ejer1.sol;
 public class Main {
 
     public static void main(String args[]) {
-        //Seleccionar tipo de conección Sql
-        ConnFactoryMethod factory = new MysqlFactory();
-        //ConnFactoryMethod factory = new OracleFactory();
-        //ConnFactoryMethod factory = new PostgresFactory();
+        //Store myStore =new StoreWithMysql();
+        //Store myStore =new StoreWithOracle();
+        Store myStore =new StoreWithPostgres();
         
-        Conn conn = factory.createConnection();
-        conn.connect();
-        conn.query();
+        myStore.buy("12345", 5);
+        myStore.sell("54321", 3);
     }
 }

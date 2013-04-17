@@ -15,8 +15,8 @@ public class MysqlConn implements Conn {
         System.out.println("Conectado a Mysql");
     }
 
-    ; 
-    public void query() {
+    public void query(String q) {
         System.out.println("Consulta a Mysql");
+        System.out.println(q);
     }
 }

@@ -4,7 +4,6 @@
  */
 package ar.edu.untdf.labprog.tp1.ejer2.sol;
 
-
 /**
  *
  * @author matiasgel
@@ -12,14 +11,12 @@ package ar.edu.untdf.labprog.tp1.ejer2.sol;
 public class Main {
 
     public static void main(String args[]) {
-        //Seleccionar tipo de conección Sql
-        //ConnFactoryMethod factory = new MysqlFactory();
-        //ConnFactoryMethod factory = new OracleFactory();
-        //ConnFactoryMethod factory = new PostgresFactory();
-        ConnFactoryMethod factory = new MsSqlServerFactory();
+        //Store myStore =new StoreWithMysql();
+        //Store myStore =new StoreWithOracle();
+        //Store myStore =new StoreWithPostgres();
+        Store myStore = new StoreWithMsSqlServer();
         
-        Conn conn = factory.createConnection();
-        conn.connect();
-        conn.query();
+        myStore.buy("12345", 5);
+        myStore.sell("54321", 3);
     }
 }

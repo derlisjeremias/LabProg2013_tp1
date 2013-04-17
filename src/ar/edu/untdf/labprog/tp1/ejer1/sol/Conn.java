@@ -12,5 +12,5 @@ public interface Conn {
 
     public void connect();
 
-    public void query();
+    public void query(String q);
 }

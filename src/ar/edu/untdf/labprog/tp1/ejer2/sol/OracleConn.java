@@ -15,8 +15,8 @@ public class OracleConn implements Conn {
         System.out.println("Conectado a Oracle");
     }
 
-    ; 
-    public void query() {
+    public void query(String q) {
         System.out.println("Consulta a Oracle");
+        System.out.println(q);
     }
 }
